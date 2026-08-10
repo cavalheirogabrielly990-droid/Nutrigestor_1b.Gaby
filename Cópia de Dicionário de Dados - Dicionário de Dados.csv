@@ -1,0 +1,22 @@
+Entidade / Tela,Campo / Atributo,Tipo de Dado,Restrições,Regra de Negócio / Tratamento,Ciclo de Vida do Dado
+Login,E-mail,Texto,Não nulo,Deve estar cadastrado,Consulta (Read)
+Login,Senha,Texto,Não nulo,validar a senha informada,Consulta (Read)
+Login,Botão entrar ,Booleano,Não nulo,Valida a senha e o E-mail e permitir acesso,Consulta (Read)
+,,,,,
+Página Inicial (Home),Nome do usuário,Texto,Não nulo, Exibir o nome do usuário após o login ,Consulta (Read)
+Página Inicial (Home),Mapa resumido,Texto,Não nulo,Mostrar localização atual do usuário,"Consulta (Read), Atualização (Update)"
+Página Inicial (Home),Menu de opções,Booleano,Não nulo,Direcionar para as demais telas,Consulta (Read)
+,,,,,
+Monitoramento do Trânsito,Localização,Texto,Não nulo,Atualização em tempo real da localização,"Consulta (Read), Atualização (Update)"
+Monitoramento do Trânsito,Velocidade,Inteiro,Não nulo,Alertar se ultrapassar o limite da via,"Consulta (Read), Atualização (Update)"
+Monitoramento do Trânsito,Alertas,Texto,Não nulo,"Exibir alertas se ocorrer acidentes, congestionamentos e riscos",Consulta (Read)
+,,,,,
+Contatos de Emergência,Nome,Texto,Não nulo,Deve conter o nome do contato,"Inserção (Create), Consulta (Read), Atualização (Update), Exclusão (Delete)"
+Contatos de Emergência,Telefone,Texto,Não nulo,Deve conter DDD,"Inserção (Create), Consulta (Read), Atualização (Update), Exclusão (Delete)"
+Contatos de Emergência,Grau de parentesco,Texto,Nulo,"identificar a relação do contato com o usuário (pai, mãe, irmão, amigo etc.).","Inserção (Create), Consulta (Read), Atualização (Update), Exclusão (Delete)"
+Contatos de Emergência,Botão Acionar ,Booleano,Não nulo,Enviar alerta aos contatos cadastrados,Consulta (Read)
+,,,,,
+Perfil e Configurações,Nome,Texto,Não nulo, Permitir alteração do nome do usuário,"Consulta (Read), Atualização (Update)"
+Perfil e Configurações,Telefone,Texto,Não nulo,Validar formato,"Atualização (Update), Consulta (Read)"
+Perfil e Configurações,Limite de velocidade para alerta,Booleano,Nulo,Definir quando o sistema deve avisar,"Consulta (Read), Atualização (Update)"
+Perfil e Configurações,Ativar notificações,Booleano,Não nulo,Habilitar ou desabilitar notificações,Atualização (Update)
